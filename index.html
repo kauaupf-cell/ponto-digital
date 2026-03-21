@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Ponto Digital</title>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Ponto Digital</h1>
+
+<label>Nome do funcionário:</label>
+<br>
+<input type="text" id="nome">
+
+<br><br>
+
+<button onclick="registrarEntrada()">Registrar Entrada</button>
+<button onclick="limparRegistros()">Limpar tudo</button>
+<button onclick="exportarRelatorio()">Exportar Relatório</button>
+
+<h2>Registros</h2>
+
+<p id="totalHoras">Total trabalhado hoje: 0h 0m</p>
+
+<input type="text" id="filtroNome" placeholder="Buscar funcionário..." onkeyup="filtrarTabela()">
+
+<table>
+
+<tr>
+<th>Nome</th>
+<th>Data</th>
+<th>Entrada</th>
+<th>Saída</th>
+<th>Horas</th>
+<th>Ações</th>
+</tr>
+
+</table>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
